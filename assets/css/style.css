@@ -19,14 +19,17 @@ body {
 
 h1 {
   font-size: 5.4rem;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 5rem;
+  text-shadow: -2.5px 0 #000000, 0 2.5px #000000, 2.5px 0 #000000, 0 -2.5px #000000;
 }
 
 h2 {
   font-size: 4.2rem;
+  color: #ffffff;
   margin-bottom: 4rem;
-  font-weight: 700;
+  font-weight: 700;text-shadow: -2.5px 0 #000000, 0 2.5px #000000, 2.5px 0 #000000, 0 -2.5px #000000;
+
 }
 
 /*--- Container ---*/
