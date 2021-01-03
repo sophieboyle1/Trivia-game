@@ -1,3 +1,4 @@
+/*--- Global ---*/
 :root {
     font-size: 62.5%;
 }
@@ -22,6 +23,7 @@ h1 {
   margin-bottom: 5rem;
 }
 
+/*--- Container ---*/
 .container {
   width: 100vw;
   height: 100vh;
@@ -59,6 +61,7 @@ h1 {
   display: none;
 }
 
+/*--- Buttons ---*/
 .btn {
   font-size: 1.8rem;
   padding: 1rem 0;
