@@ -18,7 +18,7 @@ let questions = [
     },
 
     {
-        question: "what is the capital of chile?",
+        question: "What is the capital of chile?",
         choice1: "Beunos Aires",
         choice2: "Peru",
         choice3: "Santiago",
@@ -26,7 +26,7 @@ let questions = [
         answer: 3,
     },
 
-     question: "What is the name of the Earth’s largest ocean?",
+        question: "What is the name of the Earth’s largest ocean?",
         choice1: "The Arctic Ocean",
         choice2: "The Indian Ocean",
         choice3: "The Atlantic Ocean",
@@ -34,3 +34,15 @@ let questions = [
         answer: 4,
     },
 ];
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 3;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuesions = [...questions];
+    console.log(availableQuesions);
+};
+
+startGame();
