@@ -43,6 +43,13 @@ startGame = () => {
     score = 0;
     availableQuesions = [...questions];
     console.log(availableQuesions);
+    getNewQuestion();
 };
 
+getNewQuestion = () => {
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * availableQuesions.length);
+    currentQuestion = availableQuesions[questionIndex];
+    question.innerText = currentQuestion.question;
+}
 startGame();
