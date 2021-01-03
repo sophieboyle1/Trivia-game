@@ -25,3 +25,12 @@ let questions = [
         choice4: "Quito",
         answer: 3,
     },
+
+     question: "What is the name of the Earth’s largest ocean?",
+        choice1: "The Arctic Ocean",
+        choice2: "The Indian Ocean",
+        choice3: "The Atlantic Ocean",
+        choice4: "The Pacific Ocean",
+        answer: 4,
+    },
+];
