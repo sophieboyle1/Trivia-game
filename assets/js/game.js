@@ -16,7 +16,6 @@ let questions = [
         choice4: 'ten',
         answer: 2,
     },
-
     {
         question: "What is the capital of chile?",
         choice1: "Beunos Aires",
@@ -25,7 +24,7 @@ let questions = [
         choice4: "Quito",
         answer: 3,
     },
-
+    {
         question: "What is the name of the Earth’s largest ocean?",
         choice1: "The Arctic Ocean",
         choice2: "The Indian Ocean",
