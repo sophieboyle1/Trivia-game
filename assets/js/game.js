@@ -9,6 +9,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = [];
 let counter;
+let timeValue = 10;
 
 let questions = [
     {
@@ -48,7 +49,10 @@ startGame = () => {
     getNewQuestion();
 };
 
-startTimer(15);
+startTimer(10);
+clearInterval(counter);
+startTimer(timeValue);
+
 
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
