@@ -145,12 +145,13 @@ input {
 /*--- Form ---*/
 #hud {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .hud-prefix {
   text-align: center;
   font-size: 2rem;
+  color: #ffffff;
 }
 
 .hud-main-text {
