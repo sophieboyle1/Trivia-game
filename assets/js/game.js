@@ -98,12 +98,14 @@ choices.forEach((choice) => {
     });
 });
 
-function startTimer(time){
-    counter = setInterval(timer, 1000);
-    function timer(){
-    timeCount.textContent = time;
-    time--;
-    }
+function startTimer(){
+    setInterval(function() {
+        if(timeValue <= 0 ) {
+            clearInterval(timeValue = 0)
+        }
+        timeCount.innerHTML = timeValue 
+        timeValue  -=1
+    }, 1000)
 }
 
 
