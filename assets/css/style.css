@@ -146,7 +146,7 @@ input {
     border: none;
 }
 
-/*--- Form ---*/
+/*--- hud ---*/
 #hud {
   display: flex;
   justify-content: space-around;
@@ -161,3 +161,5 @@ input {
 .hud-main-text {
   text-align: center;
 }
+
+
