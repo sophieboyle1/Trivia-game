@@ -162,4 +162,38 @@ input {
   text-align: center;
 }
 
+/*--- Font awesome icon ---*/
+.fa-crown::before {
+    font-size: 4.5rem;
+}
+
+/*--- High scores Box ---*/
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.high-score {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  transform: scale(1.025);
+}
+
+.content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  margin-bottom: 2rem;
+}
+
+
+
 
