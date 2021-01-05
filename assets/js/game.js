@@ -102,10 +102,11 @@ function startTimer(){
         if(timeValue <= 0 ) {
             clearInterval(timeValue = 0)
         }
-        timeCount.innerHTML = timeValue 
+        timeCount.innerHTML = timeValue
         timeValue  -=1
     }, 1000)
 }
+
 
 
     incrementScore = num => {
