@@ -50,8 +50,7 @@ startGame = () => {
 };
 
 startTimer(10);
-clearInterval(counter);
-startTimer(timeValue);
+
 
 
 getNewQuestion = () => {

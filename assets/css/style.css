@@ -32,6 +32,10 @@ h2 {
 
 }
 
+#end-text {
+    font-size: 3.7rem;
+}
+
 /*--- Container ---*/
 .container {
   width: 100vw;
