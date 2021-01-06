@@ -2,6 +2,8 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreText = document.getElementById("score");
 const timeCount = document.getElementById("time");
+const loader = document.getElementById('loader');
+const game = document.getElementById('game');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -37,6 +39,7 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
 
             return formattedQuestion;
         });
+
         startGame();
 
         })
@@ -54,7 +57,10 @@ startGame = () => {
     availableQuesions = [...questions];
     console.log(availableQuesions);
     getNewQuestion();
+    game.classList.remove('hidden');
+    loader.classList.add('hidden');
 };
+
 
 startTimer(30);
 
@@ -120,4 +126,6 @@ function startTimer(){
   score += num;
   scoreText.innerText = score;
 };
+
+
 
