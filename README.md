@@ -34,3 +34,16 @@ Site Goals:
 * As a user, I want to know which question I am currently on and how many I have left to answer.
 * As a user, I want a way to start a new game when the current game has ended.
 
+## The Scope Plane
+
+Features planned:
+
+* A simple and clean homepage to illustrate exactly what game you are playing.
+* Play and Highscores buttons to navigate clearly through the game.
+* Score Count.
+* Timer to make the game a little more fun and competitive.
+* Red and green colours to show answer is correct or incorrect.
+* A question progress bar to show which question you are currently on.
+* Leader score board to log in all the users highest scores.
+
+
