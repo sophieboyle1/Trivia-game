@@ -4,7 +4,7 @@ const scoreText = document.getElementById("score");
 const timeCount = document.getElementById("time");
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
-const questionCounterText = document.getElementById("questionCounter");
+const progressText = document.getElementById("progressText");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -73,7 +73,7 @@ getNewQuestion = () => {
         return window.location.assign("end.html");
     }
     questionCounter++;
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
