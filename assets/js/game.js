@@ -13,6 +13,20 @@ let timeValue = 30;
 
 let questions = [];
 
+fetch('questions.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions;
+        startGame();
+
+        })
+    .catch((err) => {
+        console.error(err);
+    });
+
+
 const CORRECT_BONUS = 100;
 const MAX_QUESTIONS = 3;
 
@@ -89,4 +103,3 @@ function startTimer(){
   scoreText.innerText = score;
 };
 
-startGame();
