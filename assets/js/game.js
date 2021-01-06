@@ -4,6 +4,7 @@ const scoreText = document.getElementById("score");
 const timeCount = document.getElementById("time");
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
+const questionCounterText = document.getElementById("questionCounter");
 
 let currentQuestion = {};
 let acceptingAnswers = false;

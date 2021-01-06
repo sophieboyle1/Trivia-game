@@ -172,6 +172,16 @@ input {
   text-align: center;
 }
 
+/*--- Progress bar ---*/
+.hud-prefix-question {
+    color: #ffffff;
+    font-size: 2rem;
+    align-self: flex-end
+}
+
+
+
+
 /*--- Font awesome icon ---*/
 .fa-crown::before {
     font-size: 4.5rem;
