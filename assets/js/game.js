@@ -20,7 +20,7 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             const formattedQuestion = {
-                question: loadedQuestion.questions
+                question: loadedQuestion.question
             };
         
             const answerChoices = [...loadedQuestion.incorrect_answers];
@@ -46,7 +46,7 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
 
 
 const CORRECT_BONUS = 100;
-const MAX_QUESTIONS = 3;
+const MAX_QUESTIONS = 4;
 
 startGame = () => {
     questionCounter = 0;
