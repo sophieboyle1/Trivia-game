@@ -38,6 +38,14 @@ h2 {
     font-size: 3rem;
 }
 
+#congrats {
+    margin-bottom: 2.5rem;
+}
+
+#finalScore {
+    margin-bottom: 2.5rem;
+}
+
 /*--- Container ---*/
 .container {
   width: 100vw;
