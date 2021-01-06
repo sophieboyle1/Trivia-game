@@ -11,32 +11,7 @@ let availableQuesions = [];
 let counter;
 let timeValue = 30;
 
-let questions = [
-    {
-        question: 'How many holes are on a standard bowling ball?',
-        choice1: 'two',
-        choice2: 'three',
-        choice3: 'five',
-        choice4: 'ten',
-        answer: 2,
-    },
-    {
-        question: "What is the capital of chile?",
-        choice1: "Beunos Aires",
-        choice2: "Peru",
-        choice3: "Santiago",
-        choice4: "Quito",
-        answer: 3,
-    },
-    {
-        question: "What is the name of the Earth’s largest ocean?",
-        choice1: "The Arctic Ocean",
-        choice2: "The Indian Ocean",
-        choice3: "The Atlantic Ocean",
-        choice4: "The Pacific Ocean",
-        answer: 4,
-    },
-];
+let questions = [];
 
 const CORRECT_BONUS = 100;
 const MAX_QUESTIONS = 3;
