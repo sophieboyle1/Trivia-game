@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
+
 /*--- Global ---*/
 :root {
     font-size: 62.5%;
@@ -5,7 +7,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Xanh Mono, sans-serif;
   margin: 0;
   padding: 0;
   color: #000000;
