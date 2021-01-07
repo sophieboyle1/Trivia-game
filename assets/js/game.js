@@ -1,3 +1,4 @@
+// Set variables for elements from HTML page
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreText = document.getElementById("score");
@@ -7,14 +8,14 @@ const game = document.getElementById('game');
 const progressText = document.getElementById("progressText");
 const progressBarFull = document.getElementById("progressBarFull");
 
+// Variables
 let currentQuestion = {};
-let acceptingAnswers = false;
-let score = 0;
-let questionCounter = 0;
-let availableQuesions = [];
-let counter;
-let timeValue = 30;
-
+let acceptingAnswers = false; // create delay before next question
+let score = 0; // calculate user score
+let questionCounter = 0; // what question you are currently on
+let availableQuesions = []; // copy of full question set
+let counter; // count down time
+let timeValue = 30; // set time value to 30 sec
 let questions = [];
 
 fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple")
@@ -49,7 +50,7 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
         console.error(err);
     });
 
-
+//Constants
 const CORRECT_BONUS = 100;
 const MAX_QUESTIONS = 4;
 
@@ -77,6 +78,7 @@ getNewQuestion = () => {
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
 
+    //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -117,6 +119,7 @@ choices.forEach((choice) => {
     });
 });
 
+// Timer
 function startTimer(){
     setInterval(function() {
         if(timeValue <= 0 ) {
@@ -124,7 +127,7 @@ function startTimer(){
         }
         timeCount.innerHTML = timeValue
         timeValue  -=1
-    }, 1000)
+    }, 1000)  // set counter variable interval to seconds
 }
 
 
