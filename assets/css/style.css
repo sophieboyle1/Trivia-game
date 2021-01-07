@@ -164,8 +164,10 @@ input {
 
 .hud-prefix {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #ffffff;
+  padding-top: 2.5rem;
+  padding-bottom: .5rem;
 }
 
 .hud-main-text {
@@ -180,10 +182,10 @@ input {
 }
 
 #progressBar {
-    width: 20rem;
+    width: 40rem;
     height: 4rem;
     border: 0.3rem solid #ffffff;
-    margin-top: 1.5rem;
+    margin: auto;
     border-radius: 50px;
     overflow: hidden;
 }
