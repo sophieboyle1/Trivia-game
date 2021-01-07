@@ -108,6 +108,7 @@ choices.forEach((choice) => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
+        //detect if answer is correct or incorrect
         const classToApply =
         selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -129,6 +130,7 @@ function startTimer(){
     setInterval(function() { // time loop
         if(timeValue <= 0 ) {
             clearInterval(timeValue = 0) // prevent time from going into negative
+            return window.location.assign("end.html");
         }
         timeCount.innerHTML = timeValue
         timeValue  -=1
