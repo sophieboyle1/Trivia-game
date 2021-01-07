@@ -5,6 +5,7 @@ const timeCount = document.getElementById("time");
 const loader = document.getElementById('loader');
 const game = document.getElementById('game');
 const progressText = document.getElementById("progressText");
+const progressBarFull = document.getElementById("progressBarFull");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -72,8 +73,11 @@ getNewQuestion = () => {
         localStorage.setItem("mostRecentScore", score);
         return window.location.assign("end.html");
     }
+
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
+
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
     currentQuestion = availableQuesions[questionIndex];
