@@ -179,6 +179,21 @@ input {
     align-self: flex-end
 }
 
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #ffffff;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #ffffff;
+    width: 0%;
+}
+
 
 
 /*--- Font awesome icon ---*/
