@@ -16,7 +16,7 @@ let questionCounter = 0; // what question you are currently on
 let availableQuesions = []; // copy of full question set
 let counter; // count down time
 let timeValue = 30; // set time value to 30 sec
-let questions = [];
+let questions = []; // questions put into array, moved to questions.json
 
 fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple")
     .then((res) => {
@@ -43,6 +43,7 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
             return formattedQuestion;
         });
 
+        //start game function
         startGame();
 
         })
@@ -51,55 +52,59 @@ fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=mul
     });
 
 //Constants
-const CORRECT_BONUS = 100;
-const MAX_QUESTIONS = 4;
+const CORRECT_BONUS = 100; // points per question correct
+const MAX_QUESTIONS = 4;   // max questions per game
 
+//Starting the game
 startGame = () => {
-    questionCounter = 0;
-    score = 0;
-    availableQuesions = [...questions];
-    console.log(availableQuesions);
-    getNewQuestion();
+    questionCounter = 0; //question start at 0
+    score = 0; //score starts at 0
+    availableQuesions = [...questions]; //spread operator to take array
+    getNewQuestion(); //next question to load
+
+    // loader only shown when necessary
     game.classList.remove('hidden');
     loader.classList.add('hidden');
 };
 
-
+//start timer function to 30 secs
 startTimer(30);
 
 
 
-getNewQuestion = () => {
+getNewQuestion = () => { //next question to load 
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
+        //if max questions go to the end page
         return window.location.assign("end.html");
     }
 
-    questionCounter++;
+    questionCounter++; //when game is started,incrament to 1
     progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
 
     //Update the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
+    //integer based on length of array
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-    currentQuestion = availableQuesions[questionIndex];
-    question.innerText = currentQuestion.question;
+    currentQuestion = availableQuesions[questionIndex];//refernce to current question
+    question.innerText = currentQuestion.question;//question and choices populated
 
 
 choices.forEach((choice) => {
-        const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        const number = choice.dataset['number'];//access to custom atributes
+        choice.innerText = currentQuestion['choice' + number];//inner html for correct answer
     });
 
-availableQuesions.splice(questionIndex, 1);
-    acceptingAnswers = true;
+availableQuesions.splice(questionIndex, 1); //splice out last question
+    acceptingAnswers = true; //allow next question
 };
-
+//function to allow different choices
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
-        if (!acceptingAnswers) return;
+        if (!acceptingAnswers) return; //if not ready to answer,ignore
 
-        acceptingAnswers = false;
+        acceptingAnswers = false; //not to click before ready
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
@@ -114,16 +119,16 @@ choices.forEach((choice) => {
 
         setTimeout(() => {
         selectedChoice.parentElement.classList.remove(classToApply);
-        getNewQuestion();
+        getNewQuestion(); // next question to load after answered
         }, 1000);
     });
 });
 
 // Timer
 function startTimer(){
-    setInterval(function() {
+    setInterval(function() { // time loop
         if(timeValue <= 0 ) {
-            clearInterval(timeValue = 0)
+            clearInterval(timeValue = 0) // prevent time from going into negative
         }
         timeCount.innerHTML = timeValue
         timeValue  -=1
@@ -131,7 +136,7 @@ function startTimer(){
 }
 
 
-
+    // Score 
     incrementScore = num => {
   score += num;
   scoreText.innerText = score;
