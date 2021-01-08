@@ -1,6 +1,8 @@
-# JavaScript Trivia Game
+# Trivia Game
 
-The live website can be found [here]
+![homepage](assets/images/homepage.png)
+
+The live website can be found [here](https://sophieboyle1.github.io/Trivia-game/.)
 
 ## Purpose
 
@@ -12,6 +14,14 @@ This Website was created for the sole purpose of completing the second Milestone
    * [The Strategy Plane](#The-Strategy-Plane)
      * [User stories](#User-Stories)
    * [The Scope Plane](#The-Scope-Plane)
+   * [The Skeleton Plane](#The-Skeleton-Plane)
+     * [Wireframes](#Wireframes)
+   * [The Surface Plane](#The-Surface-Plane)
+* [Features](#Features)
+   * [Existing Features](#Existing-Features)
+   * [Future Features](#Features-Left-to-Implement)
+* [Technologies](#Technologies)
+
 
 ## User Experience Design
 ### The Strategy Plane
@@ -47,5 +57,55 @@ Features planned:
 * A question progress bar to show which question you are currently on.
 * Leader score board to log in all the users highest scores.
 * Use a API to get a wide range of questions.
+
+## The Skeleton Plane
+### Wireframes
+
+* For wireframing I used the tool [Balsamiq](https://balsamiq.com/)
+* View my wireframes [here](assets/images/Trivia-wireframe.png)
+    * Home page
+    * Quiz page
+    * End page
+    * Score board
+
+## The Surface Plane
+### Design
+
+#### Icons and Images
+* The icon used on the website is provided by [FontAwesome](https://fontawesome.com/) on the score board .
+* The background image used on all pages is provided by [Unsplash](https://unsplash.com/)
+
+#### Typography
+* I used the same font of Xanh Mono by [Google Fonts](https://fonts.google.com/specimen/Xanh+Mono) throughout the project for a clean and classic design.
+* I used a text shadow for all headings to give dimension and readability.
+* All buttons throughout the application have a hover effect to indicate to the user of where they would like to go next.
+
+#### Colour Scheme
+* The colour scheme is kept classic as i didnt want to over-power the background image.
+* Text colours consist of Black, White and light blue [#56a5eb](https://placehold.it/15/56a5eb/000000?text=+).
+
+## Features
+
+### Existing Features
+* Responsiveness on all screen sizes.
+* Landing page buttons to start game or view highest scores.
+* Timer set to 30secs to complete quiz.
+* Score count, each correct question recieves 100 points.
+* Progress bar, shows which question user is currently on.
+* Username form input to save scores.
+* End page buttons for navigation, Play again, Home, High scores.
+
+### Features Left to Implement
+* In the furture I would like to implement different catagories section, where the user can choose from a list of different catagories. eg. Science, music, television.
+* Game modes:
+  * Give the user a choice of three game modes, 'Easy', 'Medium' or 'Hard'. Each level will go up in difficulty along with the choice of a catagory.
+
+## Technologies
+
+
+
+
+
+
 
 
