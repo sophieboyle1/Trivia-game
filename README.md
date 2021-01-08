@@ -28,7 +28,7 @@ This Website was created for the sole purpose of completing the second Milestone
 * [Credits](#Credits)
   * [Code](#Code)
   * [Acknowledgements](#Acknowledgements)
-  
+
 
 ****
 ## User Experience Design
@@ -128,11 +128,45 @@ Features planned:
 * [GitHub](https://github.com/) GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
 * [Git](https://git-scm.com/)- is used as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) The Flexbox layout is used throughout this website for layouts and styling.
+* 
 
 ****
 ## Testing
 
 ![responsive](assets/images/responsive.png)
+
+****
+## Deployment
+### Using Github Pages
+1. Navigate to the GitHub [Repository:](https://github.com/sophieboyle1/Trivia-game)
+1. Click the 'Settings' Tab.
+1. Scroll Down to the Git Hub Pages Heading.
+1. Select 'Master Branch' as the source.
+1. Click the Save button.
+1. Click on the link to go to the live deployed page.
+
+### Run Locally
+1. Navigate to the GitHub [Repository:](https://github.com/sophieboyle1/Trivia-game)
+1. Click the Code drop down menu.
+1. Either Download the ZIP file, unpackage locally and open with IDE (This route ends here) OR Copy Git URL from the HTTPS dialogue box.
+1. Open your developement editor of choice and open a terminal window in a directory of your choice.
+1. Use the 'git clone' command in terminal followed by the copied git URL.
+1. A clone of the project will be created locally on your machine.
+
+****
+## Credits
+
+### Code
+* The JavaScript hangman game was created by following a tutorial on [Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY) This was then heavily modified to fit the game design. I added a timer to being at 30 seconds, with the game ending when the time runs out. I also added a [Trivia DB API](https://opentdb.com) to give a diverse range of questions.
+* I used [W3schools](https://www.w3schools.com/howto/howto_css_loader.asp) to help with building the loader function.
+* The background image used on all pages is provided by [Unsplash](https://unsplash.com/s/photos/quiz)
+* [Code Institute](https://codeinstitute.net) Code learnt during the Full Stack Web Developer course has been implemented in this project.
+
+### Acknowledgements
+
+* My tutor Roman at the Kerry ETB for all the support he gives daily.
+* I'd like to thank my mentor Spencer Barriball for his patience and guidance throughout my project.
+* All at Code Institute and Tutor support.
 
 
 
