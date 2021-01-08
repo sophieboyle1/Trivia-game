@@ -22,6 +22,11 @@ This Website was created for the sole purpose of completing the second Milestone
    * [Future Features](#Features-Left-to-Implement)
 * [Technologies](#Technologies)
 * [Testing](#Testing)
+  * [Code Validators](#Code-Validators)
+  * [Compatibility](#Compatibility)
+  * [Testing User Stories](#Testing-User-Stories)
+  * [Additional Functionality](Additional-Functionality)
+  * [Issues](#Issues)
 * [Deployment](#Deployment)
   * [GitHub Pages](#Using-Github-Pages)
   * [Locally](Run-Locally)
@@ -45,12 +50,11 @@ Site Goals:
 * As a user, I want to easily understand the main purpose of the site.
 * As a user, I want to view the website and content clearly on any device.
 * As a user, I want to see clearly where to begin the game when I am ready.
-* As a user, I want to see other players highest scores also.
+* As a user, I want to see my previous highest scores also.
 * As a user, I want to know how much time I have left to answer the remaining questions.
 * As a user, I want to know which questions i have answered correctly as I play.
 * As a user, I want to know when the game is over.
 * As a user, I want to see my score as I asnwer each question.
-* As a user, I want to know which question I am currently on and how many I have left to answer.
 * As a user, I want a way to start a new game when the current game has ended.
 
 ## The Scope Plane
@@ -135,6 +139,57 @@ Features planned:
 
 ![responsive](assets/images/responsive.png)
 
+### Code Validators
+* CSS code is validated through [W3 Jigsaw](https://validator.w3.org/) and showed no errors.
+* JS code is validated through [JS Hint](https://jshint.com/) with no major issues.
+* When HTML code is validated through [W3 validator](https://validator.w3.org/) it will show a warning of "empty heading". This heading will be populated by JavaScript file once it is loaded.
+![testing](assets/images/testing/html-testing.png)
+
+### Compatibility
+* Devices - The website has been viewed and tested on a range of devices including Desktop, Laptop, Iphone 6/7/8/X, Ipad and Samsung Galaxy Tab, retaining structure and functionality.
+
+* Browsers - The website has been viewed and tested on a range of browsers including Google Chrome, Internet Explorer and Firefox, retaining structure and functionality.
+
+### Testing User Stories
+* As a user, I want to easily understand the main purpose of the site.
+   * On the landing page "General knowledge Quiz" is written in bold text.
+* As a user, I want to view the website and content clearly on any device.
+  * Website has been tested and is responsive on iphone, tablet, labtop and desktop.
+  * All elements are contained and the image is not distored.
+* As a user, I want to see clearly where to begin the game when I am ready.
+  * This page is easily accesible from the homepage using the play button.
+* As a user, I want to see my previous highest scores also.
+  * Once you have played the game and recieved your score, the user can input a username and save.
+  * When the user returns to the home page, there will be the high scores button where the user can check the previous scores.
+  * I have set a maxium amount of high scores to 5.
+* As a user, I want to know how much time I have left to answer the remaining questions.
+  * Once the user starts the quiz, the progress bar underneath the answer choices will move with every answer, showing which question they are currently on. 
+* As a user, I want to know which questions i have answered correctly as I play.
+  * Once an answer is selected, testing confirms the answer will turn green if correct.
+  * Once an answer is selected, testing confirms the answer will turn red if incorrect.
+* As a user, I want to know when the game is over.
+  *  If all questions are completed, the quiz will be complete and finish on the end page where the user can enter a username.
+  * If the timer runs out before the user answers all questions, the user can stil enter a username.
+  * There will be 2 buttons options, to play again or return to the home page.
+* As a user, I want to see my score as I asnwer each question.
+  * Testing confirms that if the correct answer is selected, the score will increase by 100.
+* As a user, I want a way to start a new game when the current game has ended.
+  * Testing confirms the buttons are functioning so that the user can select the button to play again, or return home.
+
+### Additional Functionality
+* Allowing single answer- This has been tested to ensure that once an answer is clicked, all other answer buttons are disabled other than the Next Question Button.
+
+* Form Testing- Tested the Save button with no input field filled in to ensure the form would not submit without a name filled in.
+
+* Link Testing - Ensured all links are working correctly to navigate smoothly between pages.
+
+#### Issues
+
+* There is an Issue with the [Trivia DB API](https://opentdb.com) that I am using. It shows dummy text rather than showing the "apostrophe" symbol.
+* I tired to fix the issue by creating a function to remove the special characters from the questions but it was unsuccessful. I also tried encoding the issue with different incoders.
+* I consulted with my mentor and he confirmed it is a bug issue connected with the API, and not with my coding.
+![bug](assets/images/testing/bug.png)
+ 
 ****
 ## Deployment
 ### Using Github Pages
