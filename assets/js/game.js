@@ -129,12 +129,12 @@ choices.forEach((choice) => {
 function startTimer(){
     setInterval(function() { // time loop
         if(timeValue <= 0 ) {
-            clearInterval(timeValue = 0) // prevent time from going into negative
+            clearInterval(timeValue = 0); // prevent time from going into negative
             return window.location.assign("end.html");
         }
-        timeCount.innerHTML = timeValue
-        timeValue  -=1
-    }, 1000)  // set counter variable interval to seconds
+        timeCount.innerHTML = timeValue;
+        timeValue  -=1;
+    }, 1000);  // set counter variable interval to seconds
 }
 
 
@@ -143,6 +143,3 @@ function startTimer(){
   score += num;
   scoreText.innerText = score;
 };
-
-
-
