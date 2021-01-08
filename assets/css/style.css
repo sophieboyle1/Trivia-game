@@ -19,12 +19,14 @@ body {
   position: relative;
 }
 
+
 h1 {
   font-size: 5.4rem;
   color: #ffffff;
   margin-bottom: 4.5rem;
   text-shadow: -2.5px 0 #000000, 0 2.5px #000000, 2.5px 0 #000000, 0 -2.5px #000000;
 }
+
 
 h2 {
   font-size: 4.2rem;
@@ -251,6 +253,39 @@ input {
   }
 }
 
+/*--- Media queries ---*/
+@media screen and (max-width: 480px){
+h1 {
+    font-size: 4rem;
+}
+}
+
+@media screen and (max-width: 480px){
+.fa-crown::before {
+    font-size: 4rem;
+}
+}
+@media screen and (max-width: 480px){
+#progressBar {
+    width: 25rem;
+    height: 4rem;
+    overflow: hidden;
+    font-size: 4rem;
+}
+}
+
+@media screen and (max-width: 480px){
+.hud-prefix {
+   padding-top: 5rem;
+   font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 480px){
+h2 {
+    font-size: 4.2rem;
+}
+}
 
 
 
