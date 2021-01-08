@@ -21,8 +21,16 @@ This Website was created for the sole purpose of completing the second Milestone
    * [Existing Features](#Existing-Features)
    * [Future Features](#Features-Left-to-Implement)
 * [Technologies](#Technologies)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+  * [GitHub Pages](#Using-Github-Pages)
+  * [Locally](Run-Locally)
+* [Credits](#Credits)
+  * [Code](#Code)
+  * [Acknowledgements](#Acknowledgements)
+  
 
-
+****
 ## User Experience Design
 ### The Strategy Plane
 This website was created to showcase my knowledge of HTML, CSS & JavaScript and to provide users with entertainment and to challenege their general knowledge skills. The game should be easy to understand, with some fun apects with time and point system.
@@ -58,6 +66,7 @@ Features planned:
 * Leader score board to log in all the users highest scores.
 * Use a API to get a wide range of questions.
 
+****
 ## The Skeleton Plane
 ### Wireframes
 
@@ -68,6 +77,7 @@ Features planned:
     * End page
     * Score board
 
+****
 ## The Surface Plane
 ### Design
 
@@ -84,6 +94,7 @@ Features planned:
 * The colour scheme is kept classic as i didnt want to over-power the background image.
 * Text colours consist of Black, White and light blue [#56a5eb](https://placehold.it/15/56a5eb/000000?text=+).
 
+****
 ## Features
 
 ### Existing Features
@@ -100,7 +111,35 @@ Features planned:
 * Game modes:
   * Give the user a choice of three game modes, 'Easy', 'Medium' or 'Hard'. Each level will go up in difficulty along with the choice of a catagory.
 
+****
 ## Technologies
+
+### Languages
+* [HTML](https://en.wikipedia.org/wiki/HTML) Used to structure and present the website.
+* [CSS](https://en.wikipedia.org/wiki/CSS) Used to style the website.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) Used to provide functionality across the site, including on click button fuctions, applying settings, populating the quiz data using the [Trivia DB API](https://opentdb.com).
+
+### Tools & Libraries
+* [Google Fonts](https://fonts.google.com/) Used to import the "Xanh Mono" font used throughout the site.
+* [Font-Awesome](https://fontawesome.com/) Used to import the icon used on the leaderboard.
+* [balsamiq Wireframes](https://balsamiq.com/wireframes/) Used to create the wireframes during the planning stage of the project.
+* [W3schools](https://www.w3schools.com/howto/howto_css_loader.asp) Used to design the loader for periods of waiting seconds.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles.
+* [GitHub](https://github.com/) GithHub is the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
+* [Git](https://git-scm.com/)- is used as version control software to commit and push code to the GitHub repository where the source code is stored.
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) The Flexbox layout is used throughout this website for layouts and styling.
+
+****
+## Testing
+
+![responsive](assets/images/responsive.png)
+
+
+
+
+
+
+
 
 
 
