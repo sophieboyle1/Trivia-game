@@ -30,6 +30,7 @@ Site Goals:
 * As a user, I want to see other players highest scores also.
 * As a user, I want to know how much time I have left to answer the remaining questions.
 * As a user, I want to know which questions i have answered correctly as I play.
+* As a user, I want to know when the game is over.
 * As a user, I want to see my score as I asnwer each question.
 * As a user, I want to know which question I am currently on and how many I have left to answer.
 * As a user, I want a way to start a new game when the current game has ended.
@@ -45,5 +46,6 @@ Features planned:
 * Red and green colours to show answer is correct or incorrect.
 * A question progress bar to show which question you are currently on.
 * Leader score board to log in all the users highest scores.
+* Use a API to get a wide range of questions.
 
 

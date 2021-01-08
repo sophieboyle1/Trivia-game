@@ -1,3 +1,4 @@
+/* followed a tutorial by Brian Design on youtube "How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial" as reference when writing this code */
 // Set variables for elements from HTML page
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
@@ -14,7 +15,6 @@ let acceptingAnswers = false; // create delay before next question
 let score = 0; // calculate user score
 let questionCounter = 0; // what question you are currently on
 let availableQuesions = []; // copy of full question set
-let counter; // count down time
 let timeValue = 30; // set time value to 30 sec
 let questions = []; // questions put into array, moved to questions.json
 
@@ -56,7 +56,7 @@ const CORRECT_BONUS = 100; // points per question correct
 const MAX_QUESTIONS = 4;   // max questions per game
 
 //Starting the game
-startGame = () => {
+    startGame = () => {
     questionCounter = 0; //question start at 0
     score = 0; //score starts at 0
     availableQuesions = [...questions]; //spread operator to take array
@@ -134,7 +134,7 @@ function startTimer(){
         }
         timeCount.innerHTML = timeValue;
         timeValue  -=1;
-    }, 1000);  // set counter variable interval to seconds
+    }, 1000) ; // set counter variable interval to seconds
 }
 
 
