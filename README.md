@@ -69,6 +69,8 @@ Features planned:
 * A question progress bar to show which question you are currently on.
 * Leader score board to log in all the users highest scores.
 * Use a API to get a wide range of questions.
+* I decided not to let the user see the correct answer after answering incorrect as I wanted to add more initiative for the user to return to the site.
+
 
 ****
 ## The Skeleton Plane
@@ -188,7 +190,7 @@ Features planned:
 
 * Not loading correctly.
    * When the user is completing the quiz, there was a issue with the wrong score being loaded if the user ran out of time before completing the quiz. I fixed the issue by adjusting the local storage to correctly match with the current score "localStorage.setItem('mostRecentScore', score); " .
-   
+
 
 * There is an Issue with the [Trivia DB API](https://opentdb.com) that I am using. It shows dummy text rather than showing the "apostrophe" symbol.
 * I tired to fix the issue by creating a function to remove the special characters from the questions but it was unsuccessful. I also tried encoding the issue with different incoders.
