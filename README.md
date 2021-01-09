@@ -144,7 +144,7 @@ Features planned:
 * JS code is validated through [JS Hint](https://jshint.com/) with no major issues.
 * When HTML code is validated through [W3 validator](https://validator.w3.org/) it will show a warning of "empty heading". This heading will be populated by JavaScript file once it is loaded.
 
-![testing](assets/images/testing/html-testing.png)
+![testing](assets/images/testing/html-testing1.png)
 
 ### Compatibility
 * Devices - The website has been viewed and tested on a range of devices including Desktop, Laptop, Iphone 6/7/8/X, Ipad and Samsung Galaxy Tab, retaining structure and functionality.

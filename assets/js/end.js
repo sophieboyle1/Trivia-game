@@ -1,3 +1,4 @@
+/* followed a tutorial by Brian Design on youtube "How to Make a Quiz App using HTML CSS Javascript - Vanilla Javascript Project for Beginners Tutorial" as reference when writing this code */
 const username = document.getElementById('username');
 const saveScoreBtn = document.getElementById('saveScoreBtn');
 const finalScore = document.getElementById('finalScore');
