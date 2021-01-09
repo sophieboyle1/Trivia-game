@@ -143,6 +143,7 @@ Features planned:
 * CSS code is validated through [W3 Jigsaw](https://validator.w3.org/) and showed no errors.
 * JS code is validated through [JS Hint](https://jshint.com/) with no major issues.
 * When HTML code is validated through [W3 validator](https://validator.w3.org/) it will show a warning of "empty heading". This heading will be populated by JavaScript file once it is loaded.
+
 ![testing](assets/images/testing/html-testing.png)
 
 ### Compatibility
@@ -188,6 +189,7 @@ Features planned:
 * There is an Issue with the [Trivia DB API](https://opentdb.com) that I am using. It shows dummy text rather than showing the "apostrophe" symbol.
 * I tired to fix the issue by creating a function to remove the special characters from the questions but it was unsuccessful. I also tried encoding the issue with different incoders.
 * I consulted with my mentor and he confirmed it is a bug issue connected with the API, and not with my coding.
+
 ![bug](assets/images/testing/bug.png)
  
 ****
