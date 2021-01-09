@@ -95,7 +95,7 @@ getNewQuestion = () => { //next question to load
 
 
 choices.forEach((choice) => {
-        const number = choice.dataset['number'];//access to custom atributes
+        const number = choice.dataset.number;//access to custom atributes
         choice.innerText = currentQuestion['choice' + number];//inner html for correct answer
     });
 
@@ -109,7 +109,7 @@ choices.forEach((choice) => {
 
         acceptingAnswers = false; //not to click before ready
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         //detect if answer is correct or incorrect
         const classToApply =
