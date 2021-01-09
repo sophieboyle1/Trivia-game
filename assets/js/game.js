@@ -135,6 +135,9 @@ function startTimer(){
             clearInterval(timeValue = 0); // prevent time from going into negative
             return window.location.assign("end.html"); //return to end page when time is up
         }
+        if(timeValue < 6 && timeValue > 0 || timeValue === 0){
+                timeCount.style.color = "red";
+            }
         
         timeCount.innerHTML = timeValue;
         timeValue  -=1;
