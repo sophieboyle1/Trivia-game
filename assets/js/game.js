@@ -63,7 +63,7 @@ const MAX_QUESTIONS = 4;   // max questions per game
     questionCounter = 0; //question start at 0
     score = 0; //score starts at 0
     availableQuesions = [...questions]; //spread operator to take array
-       localStorage.setItem('mostRecentScore', score);
+    localStorage.setItem('mostRecentScore', score);
     getNewQuestion(); //next question to load
 
     // loader only shown when necessary

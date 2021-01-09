@@ -186,6 +186,10 @@ Features planned:
 
 #### Issues
 
+* Not loading correctly.
+   * When the user is completing the quiz, there was a issue with the wrong score being loaded if the user ran out of time before completing the quiz. I fixed the issue by adjusting the local storage to correctly match with the current score "localStorage.setItem('mostRecentScore', score); " .
+   
+
 * There is an Issue with the [Trivia DB API](https://opentdb.com) that I am using. It shows dummy text rather than showing the "apostrophe" symbol.
 * I tired to fix the issue by creating a function to remove the special characters from the questions but it was unsuccessful. I also tried encoding the issue with different incoders.
 * I consulted with my mentor and he confirmed it is a bug issue connected with the API, and not with my coding.
