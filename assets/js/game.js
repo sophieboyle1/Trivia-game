@@ -14,7 +14,7 @@ let currentQuestion = {};
 let acceptingAnswers = false; // create delay before next question
 let score = 0; // calculate user score
 let questionCounter = 0; // what question you are currently on
-let availableQuesions = []; // copy of full question set
+let availableQuestions = []; // copy of full question set
 let timeValue = 30; // set time value to 30 sec
 let questions = []; // questions put into array, moved to questions.json
 let startGame;
