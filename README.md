@@ -95,7 +95,7 @@ Features planned:
 * All buttons throughout the application have a hover effect to indicate to the user of where they would like to go next.
 
 #### Colour Scheme
-* The colour scheme is kept classic as i didnt want to over-power the background image.
+* The colour scheme is kept classic as I didnt want to over-power the background image.
 * Text colours consist of Black, White and light blue [#56a5eb](https://placehold.it/15/56a5eb/000000?text=+).
 
 ****
@@ -111,7 +111,7 @@ Features planned:
 * End page buttons for navigation, Play again, Home, High scores.
 
 ### Features Left to Implement
-* In the furture I would like to implement different catagories section, where the user can choose from a list of different catagories. eg. Science, music, television.
+* In the furture I would like to implement different catagories section, where the user can choose from a list of different catagories. eg. Science, Music, Television.
 * Game modes:
   * Give the user a choice of three game modes, 'Easy', 'Medium' or 'Hard'. Each level will go up in difficulty along with the choice of a catagory.
 
