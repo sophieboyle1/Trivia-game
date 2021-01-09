@@ -17,6 +17,9 @@ let questionCounter = 0; // what question you are currently on
 let availableQuesions = []; // copy of full question set
 let timeValue = 30; // set time value to 30 sec
 let questions = []; // questions put into array, moved to questions.json
+let startGame;
+let getNewQuestion;
+let incrementScore;
 
 fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple")
     .then((res) => {
@@ -130,12 +133,14 @@ function startTimer(){
     setInterval(function() { // time loop
         if(timeValue <= 0 ) {
             clearInterval(timeValue = 0); // prevent time from going into negative
-            return window.location.assign("end.html");
+            return window.location.assign("end.html"); //return to end page when time is up
         }
+        
         timeCount.innerHTML = timeValue;
         timeValue  -=1;
     }, 1000) ; // set counter variable interval to seconds
 }
+
 
 
     // Score 
