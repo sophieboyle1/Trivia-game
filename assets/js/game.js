@@ -62,7 +62,7 @@ const MAX_QUESTIONS = 4;   // max questions per game
     startGame = () => {
     questionCounter = 0; //question start at 0
     score = 0; //score starts at 0
-    availableQuesions = [...questions]; //spread operator to take array
+    availableQuestions = [...questions]; //spread operator to take array
     localStorage.setItem('mostRecentScore', score);
     getNewQuestion(); //next question to load
 
@@ -77,7 +77,7 @@ startTimer(30);
 
 
 getNewQuestion = () => { //next question to load 
-    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         //if max questions go to the end page
         return window.location.assign("end.html");
@@ -90,8 +90,8 @@ getNewQuestion = () => { //next question to load
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
 
     //integer based on length of array
-    const questionIndex = Math.floor(Math.random() * availableQuesions.length);
-    currentQuestion = availableQuesions[questionIndex];//refernce to current question
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];//refernce to current question
     question.innerText = currentQuestion.question;//question and choices populated
 
 
@@ -100,7 +100,7 @@ choices.forEach((choice) => {
         choice.innerText = currentQuestion['choice' + number];//inner html for correct answer
     });
 
-availableQuesions.splice(questionIndex, 1); //splice out last question
+availableQuestions.splice(questionIndex, 1); //splice out last question
     acceptingAnswers = true; //allow next question
 };
 //function to allow different choices
